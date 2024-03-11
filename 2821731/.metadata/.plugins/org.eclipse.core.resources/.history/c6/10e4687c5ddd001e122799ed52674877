@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Ejemplo Polimorfismo
+		Scanner leer = new Scanner(System.in);
+		System.out.println("Calculadora\n"
+				+ "1. Sumar 2 números\n"
+				+ "2. Sumar 3 números"
+				+ "9. Salir");
+		String operador = leer.nextLine();
+		while(!operador.equalsIgnoreCase("9")) {
+			//System.out.println(operador);
+			if(operador.equalsIgnoreCase("+")) {
+				
+			}
+			
+			System.out.println("Calculadora\n"
+					+ "1. Sumar 2 números\n"
+					+ "2. Sumar 3 números"
+					+ "9. Salir");
+			
+			operador = leer.nextLine();
+			
+		}
+		
+		System.out.println("Fin del algoritmo");
+
+	}
+
+}

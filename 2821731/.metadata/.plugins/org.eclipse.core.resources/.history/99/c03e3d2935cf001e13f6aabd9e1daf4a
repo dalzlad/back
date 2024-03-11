@@ -1,0 +1,14 @@
+package ciclos;
+
+public class ciclos {
+
+	public static void main(String[] args) {
+		// Ciclo FOR
+		//Empleando el ciclo for imprimir los números
+		//enteros del 1 al 10.
+		for( int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+	}
+
+}

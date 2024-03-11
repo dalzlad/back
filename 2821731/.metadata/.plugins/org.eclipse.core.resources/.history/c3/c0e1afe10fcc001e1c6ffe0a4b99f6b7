@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("***********Condicionales************");
+		/*]Leer un número entero y determinar si es negativo, positivo o 
+		igual a cero*/
+		int numero = 0;
+		Scanner leer = new Scanner(System.in);
+		System.out.println("Por favor digite un número entero");
+		numero = leer.nextInt();  //Lectura de un entero
+		if(numero < 0) {
+			System.out.println("El número es negativo");
+		}
+		}
+}

@@ -1,0 +1,19 @@
+
+public class Carro extends Vehiculo {
+	int numeroPuertas;
+	public Carro(String placa, String color, int modelo, int capacidad, int numeroPuertas) {
+		super(placa, color, modelo, capacidad);//Hereda atributos de la superclase
+		this.numeroPuertas = numeroPuertas;
+	}
+	
+	public void setNumeroPuertas(int numeroPuertas) {
+		this.numeroPuertas = numeroPuertas;
+	}
+	
+	public int getNumeroPuertas() {
+		return this.numeroPuertas;
+	}
+	
+	
+	
+}

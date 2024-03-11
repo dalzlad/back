@@ -1,0 +1,25 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("******Concesionario******");
+		
+		//Instanciar la clase vehículo: 
+		//Crear un objeto: Espacio reservado en la memoria
+		String placa = "AAA777";
+		String color = "Plateado";
+		int modelo = 2023;
+		int capacidad = 5;
+				
+		Vehiculo vehiculo1 = new Vehiculo(placa, color, modelo, capacidad);
+		System.out.println(vehiculo1);
+		
+		//Llamar métodos de la clase vehiculo
+		vehiculo1.cambiarEstadoVehiculo();
+		
+		
+		
+		
+	}
+
+}

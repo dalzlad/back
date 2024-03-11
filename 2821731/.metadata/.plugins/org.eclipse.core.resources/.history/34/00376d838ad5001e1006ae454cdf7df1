@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Instancias las clases
+		//Objeto: Instancia de una clase
+		Circulo circulo1 = new Circulo(1.3);
+		System.out.println("El área es: "+circulo1.getArea());
+	}
+
+}

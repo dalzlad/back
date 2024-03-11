@@ -1,0 +1,14 @@
+package cadena;
+
+public class cadenas {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Recorrer un String e imprir caracter a caracter
+		String frase = "Estoy estudiando Java";
+		//              012345678...........20
+		System.out.println("Longitud de la cadena:"+frase.length());
+
+	}
+
+}

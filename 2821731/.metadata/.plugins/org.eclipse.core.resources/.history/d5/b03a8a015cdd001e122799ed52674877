@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Ejemplo Polimorfismo
+		Scanner leer = new Scanner(System.in);
+		System.out.println("Digitar un operador: +, -, *, /, s ");
+		String operador = leer.nextLine();
+		while(operador != "s") {
+			System.out.println(operador);
+			System.out.println("Digitar un operador: +, -, *, /, s ");
+		}
+		
+		System.out.println("Fin del algoritmo");
+
+	}
+
+}

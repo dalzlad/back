@@ -1,0 +1,10 @@
+
+public class Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//syso atajo de teclado para el system.out.print
+		System.out.println("********");
+	}
+
+}
