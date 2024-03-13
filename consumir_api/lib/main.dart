@@ -1,3 +1,4 @@
+import 'package:consumir_api/screens/registrar.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/listar_departamentos.dart';
@@ -18,7 +19,8 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListarDepartamentos(),
+      //home: ListarDepartamentos(),
+      home:Registrar()
     );
   }
 }

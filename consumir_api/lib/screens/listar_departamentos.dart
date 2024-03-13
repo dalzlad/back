@@ -49,7 +49,15 @@ class _ListarDepartamentosState extends State<ListarDepartamentos> {
         title: const Text('Listado de Departamentos')
       ),
       body: FutureBuilder(
-        future:fetchPosts()
+        future:fetchPosts(),
+        builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) { //Verificar si hay espera
+          return const CircularProgressIndicator(); //Retorna un circulo de progreso
+        } 
+        else if (snapshot.hasError) {
+          return Text('Error: ${snapshot.error}');
+        }
+        else{
          List<Departamento> departamentos = snapshot.data as List<Departamento>;
             return ListView.builder(
             itemCount: departamentos.length,
@@ -60,7 +68,17 @@ class _ListarDepartamentosState extends State<ListarDepartamentos> {
               );
             },
           );
+        }
+        }
       )
     );
   }
 }
+
+/*DE la API: 
+https://www.datos.gov.co/resource/9vha-vh9n.json?departamento=ANTIOQUIA
+Listar los hurtos de MEDELLÍN con ARMA DE FUEGO
+
+
+
+*/
